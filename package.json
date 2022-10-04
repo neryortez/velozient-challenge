@@ -1,0 +1,7 @@
+{
+	"scripts": {
+		"start": "npm run api:dev & npm run ui:dev",
+		"api:dev": "cd api && npm run start:dev",
+		"ui:dev": "cd ui && npm run start:dev"
+	}
+}

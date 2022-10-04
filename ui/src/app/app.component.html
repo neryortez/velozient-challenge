@@ -1,0 +1,25 @@
+<div class="grid w-[100%] md:w-[768px] m-auto">
+  <div>
+    <mat-form-field>
+      <input matInput [formControl]="filterByName" placeholder="Filter"/>
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <button mat-mini-fab color="primary"
+            class="!ml-2"
+            (click)="createCard()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+
+  <div class="flex flex-wrap gap-2">
+
+    <ng-container *ngFor="let card of cards$|async">
+      <app-card [card]="card" (edit)="editCard(card)" (delete)="deleteCard(card)"></app-card>
+    </ng-container>
+
+  </div>
+
+</div>
+
+
