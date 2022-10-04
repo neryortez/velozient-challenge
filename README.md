@@ -4,7 +4,13 @@ Description
 This is a code challenge for Velozient by Nery.
 It consists of two projects: a NestJS project for the API and an Angular project for the UI.
 
-Every project has their own run scripts, but to facilitate the review a script is included in the root folder. Just run:
+Every project has their own run scripts, but to facilitate the review a script is included in the root folder.
+
+To install all the dependencies run:
+```
+npm run install
+```
+To run both projects run:
 ```
 npm run start
 ```

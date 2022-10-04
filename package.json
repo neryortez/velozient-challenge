@@ -1,5 +1,8 @@
 {
 	"scripts": {
+		"install": "npm run install:ui && npm run install:api",
+		"install:ui": "cd ui && npm install",
+		"install:api": "cd api && npm install",
 		"start": "npm run api:dev & npm run ui:dev",
 		"api:dev": "cd api && npm run start:dev",
 		"ui:dev": "cd ui && npm run start:dev"
